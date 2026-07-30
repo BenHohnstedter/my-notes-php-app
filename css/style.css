@@ -1,0 +1,48 @@
+:root {
+    --bs-primary-rgb: 74, 65, 114 !important;
+    --bs-dark-rgb: 43, 43, 43!important;
+    --bs-success-rgb: 60, 114, 93!important;
+    --bs-secondary-rgb: 123, 123, 130!important;
+    --bs-light-rgb: 55, 55, 55!important;
+    --bs-primary-bg-subtle: #afa7d3!important;
+}
+
+.btn-primary {
+    --bs-btn-border-color: inherit!important;
+}
+
+/***** SPECIALS *****/
+.pizza-rotation {
+    transition: transform 0.8s ease-in-out;
+}
+
+.pizza-rotation:hover {
+    transform: rotate(360deg) scale(1.3);
+}
+/***** SPECIALS *****/
+
+.own-bg-image {
+    background: url('/img/banner.jpg') center;
+    background-size: cover;
+}
+
+.header-hover:hover {
+    filter: brightness(125%);
+}
+
+.add-page-height {
+    min-height: 400px;
+}
+
+.own-col-1 {
+    flex: 0 0 auto;
+    width: 40px!important;
+}
+
+.own-label-width {
+    width: 100px!important;
+}
+
+.own-mb-6 {
+  margin-bottom: 100px;
+}
