@@ -16,9 +16,9 @@ class Config
     public function setDb(): array
     {
         return [
-            'dbn' => 'mysql:host=mariadb;dbname=my-note-oop',
+            'dbn' => 'mysql:host=127.0.0.1;dbname=my-note-oop',
             'user' => 'root',
-            'password' => 'mariaadmin',
+            'password' => '',
         ];
     }
 
