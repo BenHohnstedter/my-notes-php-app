@@ -54,13 +54,18 @@ CREATE TABLE `my-note-oop`.`notes` (
 );
 ```
 
-3. Zugangsdaten in `Config.php` anpassen (`setDb()`):
+3. Zugangsdaten anpassen: `Config.example.php` nach `Config.php` kopieren und
+   in `setDb()` eintragen (`Config.php` ist von Git ausgeschlossen, damit
+   keine lokalen Zugangsdaten eingecheckt werden):
 
 ```php
-'dbn'      => 'mysql:host=127.0.0.1;dbname=my-note-oop',
-'user'     => 'root',
-'password' => '',
+'dbn'      => 'mysql:host=127.0.0.1;dbname=DB_NAME',
+'user'     => 'DB_USER',
+'password' => 'DB_PASSWORD',
 ```
+
+Hinweis: Die Konfig `Config.php` ist von Git ausgeschlossen – sie wird aus der
+Vorlage `Config.example.php` kopiert und lokal befüllt.
 
 **Lokal erreichbar unter:** `http://localhost/pu-my-notes-php-app/`
 

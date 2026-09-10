@@ -1,1 +1,5 @@
 .idea/
+
+# Lokale DB-Konfiguration (keine Credentials/DB-Namen einchecken!).
+# Vorlage: Config.example.php
+/Config.php

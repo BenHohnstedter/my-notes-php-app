@@ -1,4 +1,11 @@
 <?php
+/*
+ * Beispiel-Konfiguration.
+ * Diese Datei nach Config.php kopieren (genau als Config.php) und die
+ * Datenbank-Zugangsdaten lokal eintragen. Config.php selbst ist von Git
+ * ausgeschlossen, damit keine lokalen DB-Namen oder Passwörter ins
+ * Repository gelangen.
+ */
 class Config
 {
     protected int $noteLimitPerSite = 10;
@@ -16,9 +23,9 @@ class Config
     public function setDb(): array
     {
         return [
-            'dbn' => 'mysql:host=127.0.0.1;dbname=my-note-oop',
-            'user' => 'root',
-            'password' => '',
+            'dbn' => 'mysql:host=127.0.0.1;dbname=DB_NAME',
+            'user' => 'DB_USER',
+            'password' => 'DB_PASSWORD',
         ];
     }
 
